@@ -1,0 +1,109 @@
+Algoritmo "ordenação com bubble sort"
+
+Var
+   n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,x, a: inteiro
+  //a variavel "a" é para a realizaçao da troca de valores
+
+Inicio
+
+      escreval("-------------------------------------------")
+      escreval("          COLOCAR EM ORDEM CRESCENTE.     ")
+      escreval("-------------------------------------------")
+      escreval("")
+      escreval("")
+      
+      escreva("digite o 1º valor: ")
+      leia(n1)
+      escreva("digite o 2º valor: ")
+      leia(n2)
+      escreva("digite o 3º valor: ")
+      leia(n3)
+      escreva("digite o 4º valor: ")
+      leia(n4)
+      escreva("digite o 5º valor: ")
+      leia(n5)
+      escreva("digite o 6º valor: ")
+      leia(n6)
+      escreva("digite o 7º valor: ")
+      leia(n7)
+      escreva("digite o 8º valor: ")
+      leia(n8)
+      escreva("digite o 9º valor: ")
+      leia(n9)
+      escreva("digite o 10º valor: ")
+      leia(n10)
+      
+            //estrutura de repetição
+            //para comparar os valores
+            
+        x<-0
+      enquanto (x<10)faca
+             se(n1>n2)entao
+                   a<-n1
+                   n1<-n2
+                    n2<-a
+             fimse
+              se(n2>n3)entao
+                   a<-n2
+                   n2<-n3
+                    n3<-a
+             fimse
+              se(n3>n4)entao
+                   a<-n3
+                   n3<-n4
+                    n4<-a
+             fimse
+              se(n4>n5)entao
+                   a<-n4
+                   n4<-n5
+                    n5<-a
+             fimse
+              se(n5>n6)entao
+                   a<-n5
+                   n5<-n6
+                    n6<-a
+             fimse
+              se(n6>n7)entao
+                   a<-n6
+                   n6<-n7
+                    n7<-a
+             fimse
+              se(n7>n8)entao
+                   a<-n7
+                   n7<-n8
+                    n8<-a
+             fimse
+              se(n8>n9)entao
+                   a<-n8
+                   n8<-n9
+                    n9<-a
+             fimse
+              se(n9>n10)entao
+                   a<-n9
+                   n9<-n10
+                   n10<-a
+             fimse
+             x<-x+1
+      fimenquanto
+            escreval("")
+            escreval("")
+            escreval("")
+            
+            escrevaL("========================================")
+            escrevaL("========================================")
+         //comando para escrever os numeros em ordem
+      escrevaL("")
+      escrevaL("os números em ordem crescente são:")
+      escrevaL("")
+      escrevaL("1º -> ", n1)
+      escrevaL("2º -> ", n2)
+      escrevaL("3º -> ", n3)
+      escrevaL("4º -> ", n4)
+      escrevaL("5º -> ", n5)
+      escrevaL("6º -> ", n6)
+      escrevaL("7º -> ", n7)
+      escrevaL("8º -> ", n8)
+      escrevaL("9º -> ", n9)
+      escrevaL("10º -> ", n10)
+
+Fimalgoritmo
