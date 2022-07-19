@@ -1,0 +1,316 @@
+Algoritmo "realizaçao de um vestibular"
+
+Var
+                      //variaveis da turma a
+    nomea:caractere
+    media_a:real
+    xa, notaa, maiornotaa,aprovadosa, reprovadosa:inteiro
+
+    
+    
+                      //variaveis da turma b
+    
+    nomeb:caractere
+    media_b:real
+    xb, notab, maiornotab,aprovadosb, reprovadosb:inteiro
+    
+                      //variaveis da turma c
+    nomec:caractere
+    media_c:real
+    xc, notac,maiornotac,aprovadosc, reprovadosc:inteiro
+
+    
+                      //variaveis da turma d
+    
+    nomed:caractere
+    media_d:real
+    xd, notad, maiornotad, aprovadosd, reprovadosd:inteiro
+
+
+
+    aprovados, reprovados:inteiro
+    mediageral, maiornota:real
+    
+Inicio
+      escreval("================================================")
+      escreval("                  vestibular")
+      escreval("================================================")
+      escreval()
+      escreval("")
+      escreval()
+      escreval()
+      escreval()
+
+      
+      //===================================
+      //              turma A
+      //===================================
+      
+          escreval("=====================================================")
+          escreval("                    turma A")
+          escreval("=====================================================")
+          escreval()
+          escreval()
+          escreval()
+
+         xa<-1
+         maiornotaa<-0
+         aprovadosa<-0
+         reprovadosa<-0
+         mediageral<-0
+       enquanto (xa<=25) faca
+             escreva("nome: ")
+             leia(nomea)
+             escreva("nota: ")
+             leia(notaa)
+             se(notaa>maiornotaa)e (notaa<=10)entao
+                   maiornotaa<-notaa
+             fimse
+             se(notaa>=7)entao
+                   aprovadosa<-aprovadosa+1
+             senao
+                  reprovadosa<-reprovadosa+1
+             fimse
+             
+             xa<-xa+1
+            
+             media_a<- media_a+notaa
+             mediageral<-mediageral+notaa
+
+       fimenquanto
+       
+            media_a<-media_a/25
+
+       
+
+      
+                        //===================================
+                        //              turma B
+                        //===================================
+          escreval("=====================================================")
+          escreval("                    turma B")
+          escreval("=====================================================")
+          escreval()
+          escreval()
+          escreval()
+
+
+       xb<-1
+         maiornotab<-0
+         aprovadosb<-0
+         reprovadosb<-0
+       enquanto (xb<=25) faca
+             escreva("nome: ")
+             leia(nomeb)
+             escreva("nota: ")
+             leia(notab)
+             se(notab>maiornotab)e (notaa<=10)entao
+                   maiornotab<-notab
+             fimse
+             se(notab>=7)entao
+                   aprovadosb<-aprovadosb+1
+             senao
+                  reprovadosb<-reprovadosb+1
+             fimse
+
+             xb<-xb+1
+              mediageral<-mediageral+notab
+             media_b<- media_b+notab
+
+       fimenquanto
+
+            media_b<-media_b/25
+
+
+                        //===================================
+                        //              turma c
+                        //===================================
+
+          escreval("=====================================================")
+          escreval("                    turma C")
+          escreval("=====================================================")
+          escreval()
+          escreval()
+          escreval()
+
+
+
+             xc<-1
+         maiornotac<-0
+         aprovadosc<-0
+         reprovadosc<-0
+       enquanto (xc<=25) faca
+             escreva("nome: ")
+             leia(nomec)
+             escreva("nota: ")
+             leia(notac)
+             se(notac>maiornotac)e (notac<=10)entao
+                   maiornotac<-notac
+             fimse
+             se(notac>=7)entao
+                   aprovadosc<-aprovadosc+1
+             senao
+                  reprovadosc<-reprovadosc+1
+             fimse
+
+             xc<-xc+1
+              mediageral<-mediageral+notac
+             media_c<- media_c+notac
+
+       fimenquanto
+
+            media_c<-media_c/25
+
+
+
+      //===================================
+      //              turma d
+      //===================================
+          escreval("=====================================================")
+          escreval("                    turma D")
+          escreval("=====================================================")
+          escreval()
+          escreval()
+          escreval()
+      
+      
+
+             xd<-1
+         maiornotad<-0
+         aprovadosd<-0
+         reprovadosd<-0
+       enquanto (xd<=25) faca
+             escreva("nome: ")
+             leia(nomed)
+             escreva("nota: ")
+             leia(notad)
+             se(notad>maiornotad)e (notad<=10)entao
+                   maiornotad<-notad
+             fimse
+             se(notad>=7)entao
+                   aprovadosd<-aprovadosd+1
+             senao
+                  reprovadosd<-reprovadosd+1
+             fimse
+
+             xd<-xd+1
+              mediageral<-mediageral+notad
+             media_d<- media_d+notad
+
+       fimenquanto
+
+            media_d<-media_d/25
+
+            
+            aprovados<-aprovadosa+aprovadosb+aprovadosc+aprovadosd
+            reprovados<-reprovadosa+reprovadosb+reprovadosc+reprovadosd
+            mediageral<-mediageral/100
+            maiornota<-0
+            SE(maiornota<maiornotaa)entao
+                  maiornota<-maiornotaa
+            fimse
+            
+            SE(maiornota<maiornotab)entao
+                  maiornota<-maiornotab
+            fimse
+            
+            SE(maiornota<maiornotac)entao
+                  maiornota<-maiornotac
+            fimse
+            
+            SE(maiornota<maiornotad)entao
+                  maiornota<-maiornotad
+            fimse
+            
+              escreval()
+            escreval("=====================================================")
+            escreval("                        turma A")
+            escreval("=====================================================")
+            escreval("")
+            escreval("")
+            escreval("---------------------------------")
+            escreval("média da turma: ", media_a)
+            escreval("---------------------------------------")
+            escreval("aprovados: ", aprovadosa)
+            escreval("---------------------------------------")
+            escreval("reprovados: ", reprovadosa)
+            escreval("---------------------------------------")
+            escreval("maior nota: ", maiornotaa)
+            escreval("---------------------------------------")
+            escreval()
+            
+
+             escreval()
+            escreval("=====================================================")
+            escreval("                        turma B")
+            escreval("=====================================================")
+            escreval("")
+            escreval("")
+            escreval("---------------------------------")
+            escreval("média da turma: ", media_b)
+            escreval("---------------------------------------")
+            escreval("aprovados: ", aprovadosb)
+            escreval("---------------------------------------")
+            escreval("reprovados: ", reprovadosb)
+            escreval("---------------------------------------")
+            escreval("maior nota: ", maiornotab)
+            escreval("---------------------------------------")
+            escreval()
+
+
+
+
+              escreval()
+            escreval("=====================================================")
+            escreval("                        turma C")
+            escreval("=====================================================")
+            escreval("")
+            escreval("")
+            escreval("---------------------------------")
+            escreval("média da turma: ", media_c)
+            escreval("---------------------------------------")
+            escreval("aprovados: ", aprovadosc)
+            escreval("---------------------------------------")
+            escreval("reprovados: ", reprovadosc)
+            escreval("---------------------------------------")
+            escreval("maior nota: ", maiornotac)
+            escreval("---------------------------------------")
+            escreval()
+
+
+
+            escreval()
+            escreval("=====================================================")
+            escreval("                      turma D")
+            escreval("=====================================================")
+            escreval("")
+            escreval("")
+            escreval("---------------------------------")
+            escreval("média da turma: ", media_d)
+            escreval("---------------------------------------")
+            escreval("aprovados: ", aprovadosd)
+            escreval("---------------------------------------")
+            escreval("reprovados: ", reprovadosd)
+            escreval("---------------------------------------")
+            escreval("maior nota: ", maiornotad)
+            escreval("---------------------------------------")
+            escreval("")
+            escreval("--------------------------------------------------")
+            escreval("")
+
+
+
+
+            
+            
+          escreval("=====================================================")
+          escreval("                    MÉDIA GERAL")
+          escreval("=====================================================")
+          escreval("APROVADOS: ", aprovados)
+          escreval("REPROVADOS: ", reprovados)
+          escreval("média geral: ", mediageral)
+          escreval("MAIOR NOTA", maiornota)
+
+
+      
+Fimalgoritmo
