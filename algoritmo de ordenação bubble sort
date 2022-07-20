@@ -1,5 +1,5 @@
 Algoritmo "ordenação com bubble sort"
-
+// algoritmo criado utilizando o editor visualg
 Var
    n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,x, a: inteiro
   //a variavel "a" é para a realizaçao da troca de valores
