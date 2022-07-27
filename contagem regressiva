@@ -1,0 +1,25 @@
+"""
+Faça um código que execute a contagem regressiva de 
+uma bomba, informando o número de segundos para explodir.
+Ele deverá mostrar a mensagem “iniciando contagem regressiva”, 
+os segundos passados e, no final, a mensagem “BUM!”.
+"""
+
+
+print("--------------------------------------")
+print("        CONTAGEM REGRESSIVA")
+print("--------------------------------------")
+print("")
+print("")
+print("iniciando contagem regressiva")
+print("")
+print("")
+i=30
+for i in range(20,0,-1):
+    print(i)
+
+print("") 
+print("")
+print("=======================")
+print("         BUM!!")
+print("=======================")
