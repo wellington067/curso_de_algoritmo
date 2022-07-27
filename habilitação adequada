@@ -1,0 +1,52 @@
+"""Desenvolva um código que utilize as seguintes características de um veículo:
+- Quantidade de rodas;
+- Peso bruto em quilogramas;
+- Quantidade de pessoas no veículo.
+
+Com essas informações, o programa mostrará qual é a melhor categoria de habilitação para o veículo informado a partir das condições:
+A: Veículos com duas ou três rodas;
+B: Veículos com quatro rodas, que acomodam até oito pessoas e seu peso é de até 3500 kg;
+C: Veículos com quatro rodas ou mais e com peso entre 3500 e 6000 kg;
+D: Veículos com quatro rodas ou mais e que acomodam mais de oito pessoas;
+E: Veículos com quatro rodas ou mais e com mais de 6000 kg. """
+
+print("============================================================")
+print("                  habilitação adequada")
+print("============================================================")
+print("")
+print("")
+
+quantas_rodas =int(input("quantidade de rodas: "))
+peso = int(input("peso kg: "))
+quantas_pessoas =  int(input("capacidade de pessoas: "))
+  
+  
+if (quantas_rodas == 2) or (quantas_rodas==3):
+        print("")
+        print("----------------------------------")
+        print('a mais adequada é a categoria A')
+        print("----------------------------------")
+        
+elif (quantas_rodas == 4) and (quantas_pessoas<=8) and (peso<3500):
+        print("")
+        print("----------------------------------")
+        print('a mais adequada é a categoria B')
+        print("----------------------------------")
+        
+elif (quantas_rodas>=4) and (peso>=3500) and (peso<=6000):
+        print("")
+        print("----------------------------------")
+        print('a mais adequada é a categoria C')
+        print("----------------------------------")
+        
+elif (quantas_rodas>=4) and (quantas_pessoas>8):
+        print("")
+        print("----------------------------------")
+        print('a mais adequada é a categoria D')
+        print("----------------------------------")
+        
+elif (quantas_rodas>=4) and (peso>6000):
+        print("")
+        print("----------------------------------")
+        print('a mais adequada é a categoria E')
+        print("----------------------------------")
