@@ -1,0 +1,41 @@
+print("--------------------------------------------------------")
+print("                     calculadora")
+print("--------------------------------------------------------")
+print("")
+print("")
+
+
+
+def calcular(num1, num2, op):
+    if op == "+" : 
+        res = num1+num2 
+        return res
+    elif op == "-" :
+        res = num1-num2 
+        return res
+    elif op == "*" : 
+        res = num1*num2 
+        return res
+    elif op == "/" : 
+        res = num1/num2 
+        return res
+    else:
+        print("operador invalido")
+
+num1=int(input("digite o primeiro número: "))
+num2= int(input("digite outro número: "))
+
+
+print("=======================================================")
+print("          qual operação você quer realizar? ")
+print("=======================================================")
+print("+ - para adição")
+print("- - para subtração")
+print("* - para multiplicação")
+print("/ - para divisão")
+print("=======================================================")
+op=input("")
+
+print("o resultado foi: ", calcular(num1, num2, op))
+
+
