@@ -41,24 +41,37 @@ def calcular(num1, num2, op):
     elif op == "/" : 
         res = num1/num2 
         return res
+    elif op == "0" :
+        res=0
+        print("sistema finalizado")
+        return res
     else:
-        res = 0
+        res = "essa opção não existe"
         return res
 
-num1=int(input("digite o primeiro numero: "))
-num2= int(input("digite outro numero: "))
+sair=0
+while sair==0 :
+    
+     print("")
+     print("------------------------------------------------------")
+     print("")
+     
+     num1=int(input("digite o primeiro número: "))
+     num2= int(input("digite o segundo número: "))
 
-
-print("=======================================================")
-print("          qual operação voce quer realizar? ")
-print("=======================================================")
-print("+ - para adição")
-print("- - para subtração")
-print("* - para multiplicação")
-print("/ - para divisão")
-print("=======================================================")
-op=input("")
-
-print("o resultado foi: ", calcular(num1, num2, op))
-
+     print("=======================================================")
+     print("          qual operação você quer realizar? ")
+     print("=======================================================")
+     print("+ - para adição")
+     print("- - para subtração")
+     print("* - para multiplicação")
+     print("/ - para divisão")
+     print("0 - para Sair")
+     print("=======================================================")
+     op=input("")
+    
+     if op=="0":
+        sair=1
+    
+     print("o resultado foi: ", calcular(num1, num2, op))
 
