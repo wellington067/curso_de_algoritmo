@@ -19,7 +19,7 @@ print("")
 nome_completo = input("nome completo: ")
 ano_nascimento = int(input("ano de nascimento: "))
 
-while ano_nascimento < 1922 or ano_nascimento > 2022 :
+while ano_nascimento < 1922 or ano_nascimento > 2021 :
     print("por favor, digite um ano de nascimento válido.")
     print("")
     ano_nascimento= int(input("ano de nascimento: "))
