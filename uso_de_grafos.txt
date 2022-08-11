@@ -1,0 +1,9 @@
+1º exemplo :
+
+  Os grafos podem ser utilizados para representar as amizades que os usuários tem um com o outro em uma rede social e para mostrar o gráu da amizade, se é pouca ou muita.
+como exemplo temos o facebook.
+
+
+2º exemplo :
+
+  Na organização da própia internet.
