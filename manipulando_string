@@ -1,0 +1,44 @@
+Algoritmo "manipulaçao de strings"
+
+Var
+  valor, original, editada, numeroeditado, localize:caractere
+  quantidade, localizado: inteiro
+  numero:real
+
+Inicio
+escreval("===============================")
+escreval("      manipulando strings")
+escreval("===============================")
+
+escreva("digite uma palavra: ")
+leia(valor)
+quantidade <- compr(valor)
+
+escreval()
+escreval("o total de caracteres nesta palavra é ",quantidade)
+ escreval("------------------------------------------")
+escreval()
+escreval()
+
+escreva("digite outra palavra: ")
+leia(original)
+editada <- maiusc(original)
+escreval()
+escreval()
+escreval("a palavra editada para maiusculo fica assim: ",editada)
+escreval("-------------------------------------------")
+escreval()
+escreval()
+
+escreva("digite um numero: ")
+leia(numero)
+numeroeditado <- numpcarac(numero)
+escreval()
+escreval()
+
+escreval("o numero ",numeroeditado," foi transformado para um caractere com sucesso!")
+escreval("-------------------------------------------")
+escreval()
+escreval()
+
+Fimalgoritmo
